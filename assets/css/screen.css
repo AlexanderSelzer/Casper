@@ -460,16 +460,22 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .blog-logo {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
     text-decoration: none;
+    overflow: hidden;
+    border-radius: 50px;
 }
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 .blog-logo img {
+    position: absolute;
     display: block;
-    max-height: 100px;
+    height: 100px;
     width: auto;
-    margin: 0 auto;
-    line-height: 0;
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
@@ -511,15 +517,15 @@ margin on the iframe, cause it breaks stuff. */
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: rgb(144, 144, 144) 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
     background: #fff;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
     box-shadow: #fff 0 0 0 5px;
 }
 
@@ -542,7 +548,7 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0 0 5px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-    color: #9EABB3;
+    color: rgb(167, 167, 189);
 }
 
 .post-meta a {
@@ -759,7 +765,7 @@ margin on the iframe, cause it breaks stuff. */
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: rgb(132, 157, 187);
     text-align: center;
 }
 
@@ -810,18 +816,18 @@ margin on the iframe, cause it breaks stuff. */
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
     line-height: 1.7em;
-    color: #BBC7CC;
+    color: rgb(67, 48, 46);
     text-align: center;
-    background: #F7FAFB;
+    background: rgb(45, 177, 134);
 }
 
 .site-footer a {
-    color: #BBC7CC;
+    color: rgb(67, 45, 66);
     text-decoration: underline;
 }
 
 .site-footer a:hover {
-    color: #50585D;
+    color: rgb(67, 65, 66);
 }
 
 .poweredby .icon-ghost {
@@ -846,17 +852,17 @@ margin on the iframe, cause it breaks stuff. */
     top: -14px;
     left: 50%;
     margin-left: -15px;
-    border: #EBF2F6 1px solid;
+    border: 1px solid rgb(189, 78, 68);
     text-align: center;
     line-height: 2.4rem;
     border-radius: 50px;
-    background: #fff;
+    background: rgb(166, 97, 87);
     transition: box-shadow 0.5s;
 }
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
-    color: #D2DEE3;
+    color: rgb(34, 23, 67);
     font-size: 10px;
     position: absolute;
     top: 9px;
@@ -872,7 +878,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .subscribe:hover:before {
-    color: #50585D;
+    color: rgb(39, 33, 87);
 }
 
 /* CSS tooltip saying "Subscribe!" - initially hidden */
